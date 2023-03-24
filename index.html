@@ -37,12 +37,12 @@
                     <h5>escolha sua cor</h5>
                 </div>
                 <div class="content">
-                    <span id="Green" onclick="imgSlider('img/green.png'); circleChange('#445c42') "></span>
-                    <span id="Pink" onclick="imgSlider('img/pink.png'); circleChange('#ffc9cf')"></span>
-                    <span id="Blue" onclick="imgSlider('img/blue.png'); circleChange('#0b839e')"></span>
-                    <span id="Black" onclick="imgSlider('img/black.png'); circleChange('#092732')"></span>
-                    <span id="White"onclick="imgSlider('img/white.png'); circleChange('#e0dbd7')"></span>
-                    <span id="red" onclick="imgSlider('img/red.png'); circleChange('#cf4f68')"></span>
+                    <span id="Green" onclick="imgSlider('img/green.png'); circleChange('#445c42'); effect()"></span>
+                    <span id="Pink" onclick="imgSlider('img/pink.png'); circleChange('#ffc9cf'); effect()"></span>
+                    <span id="Blue" onclick="imgSlider('img/blue.png'); circleChange('#0b839e'); effect()"></span>
+                    <span id="Black" onclick="imgSlider('img/black.png'); circleChange('#092732'); effect()"></span>
+                    <span id="White"onclick="imgSlider('img/white.png'); circleChange('#e0dbd7'); effect()"></span>
+                    <span id="red" onclick="imgSlider('img/red.png'); circleChange('#cf4f68'); effect()"></span>
 
                 </div>
             </div>
@@ -60,6 +60,12 @@
             const circle = document.querySelector('.circle');
             circle.style.background = color;
 
+        }
+        function effect(){
+            console.log('função funcionando !!!');
+            const effectChange=document.querySelector('.main-img img');
+            effectChange.style.animation='animacao 3s';
+            
         }
     </script>
     

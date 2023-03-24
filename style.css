@@ -8,6 +8,7 @@
 }
 body{
     background-color:#e8e6e7;
+    
 }
 header{
     padding:20px 70px;
@@ -129,12 +130,17 @@ main section{
 }
 .main-img img{
     width: 450px;
-    transform: rotate(-7deg);
+    animation: none;
+}
+@keyframes animacao {
+    0%{transform: rotate(-7deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(-7deg);}
 }
 .circle{
     position:absolute;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     width: 100%;
     height:100%;
     background:#445c42;
